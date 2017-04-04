@@ -1,0 +1,6 @@
+linters:
+  ConsecutiveComments:
+    exclude:
+      - 'main.html.haml'
+  LineLength:
+    max: 110

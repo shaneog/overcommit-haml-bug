@@ -1,0 +1,11 @@
+# Use this file to configure the Overcommit hooks you wish to use. This will
+# extend the default configuration defined in:
+# https://github.com/brigade/overcommit/blob/master/config/default.yml
+gemfile: Gemfile
+verify_signatures: false
+
+PreCommit:
+  HamlLint:
+    enabled: true
+    include: '*.haml'
+    on_warn: fail # Treat all warnings as failures
